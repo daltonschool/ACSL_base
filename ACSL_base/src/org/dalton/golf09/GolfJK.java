@@ -1,4 +1,4 @@
-package org.dalton.examples.golf;
+package org.dalton.golf09;
 //************************
 //	James Kennedy 12/15/09 ACSL Golfing Program 
 //

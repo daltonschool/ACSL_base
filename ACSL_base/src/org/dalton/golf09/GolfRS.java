@@ -1,4 +1,4 @@
-package org.dalton.examples.golf;
+package org.dalton.golf09;
 /*
  * ACSL Golf
  * by Ryan Sit
