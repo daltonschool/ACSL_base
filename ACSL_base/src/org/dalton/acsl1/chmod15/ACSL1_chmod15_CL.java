@@ -1,0 +1,6 @@
+package org.dalton.acsl1.chmod15;
+public class ACSL1_chmod15_CL {
+	public static void main(String[] args) throws java.io.IOException {
+		for(int i=0; i<5; i++) System.out.print((new String[]{"rwx rwx rwx", "rws rwx rwx", "rwx rws rwx", null, "rwx rwx rwt"}[System.in.read() + System.in.read() + System.in.read() - 124] + " " + (String.format("%3s", Integer.toBinaryString(System.in.read() - 48)).replace(" ", "0") + (char)(System.in.read() - 44 + System.in.read())) + (String.format("%3s", Integer.toBinaryString(System.in.read() - 48)).replace(" ", "0") + (char)(System.in.read() - 44 + System.in.read())) + (String.format("%3s", Integer.toBinaryString(System.in.read() - 48)).replace(" ", "0"))).replaceFirst("[^01\\s]([^01]*0)", "-$1").replaceFirst("(.)[^01\\s]([^01]*[01]0)", "$1-$2").replaceFirst("(..)[^01\\s]([^01]*[01].0)", "$1-$2").replaceFirst("(.{4})[^01\\s]([^01]*[01].{3}0)", "$1-$2").replaceFirst("(.{5})[^01\\s]([^01]*[01].{4}0)", "$1-$2").replaceFirst("(.{6})[^01\\s]([^01]*[01].{5}0)", "$1-$2").replaceFirst("(.{8})[^01\\s]([^01]*[01].{7}0)", "$1-$2").replaceFirst("(.{9})[^01\\s]([^01]*[01].{8}0)", "$1-$2").replaceFirst("(.{10})[^01\\s]([^01]*[01].{9}0)", "$1-$2").replaceFirst("([^01]*) ([01][01][01] [01][01][01] [01][01][01])", "$2 and $1") + (char)(System.in.read()));       
+	}
+}
